@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encriptador de texto simples" />
+    <meta name="author" content="João Peluzio" />
+    <meta name="keywords" content="encriptador, texto, simples" />
+
+    <title>Encriptador de texto</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/favicon_safe.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body class="app">
+    <header>
+      <a target="_blank" href="https://alura.com.br"
+        ><img src="assets/alura_logo.svg" alt="logo da alura"
+      /></a>
+
+      <button id="restartButton" class="restart-button">Reiniciar</button>
+    </header>
+
+    <main>
+      <form id="encriptador_form">
+        <label for="encriptador_form_input_textarea"
+          ><h1 class="encriptador_form_titulo">Digite seu texto</h1></label
+        >
+        <textarea
+          placeholder="Clique aqui e comece a digitar ou cole o seu texto."
+          id="encriptador_form_input_textarea"
+          name="inputText"
+          rows="8"
+          cols="40"
+        ></textarea>
+
+        <p class="encriptador_form_aviso">
+          <img
+            src="assets/exclamation.svg"
+            alt="aviso para apenas usar letras minusculas e sem acento"
+          />Você precisa digitar alguma coisa para criptografar.
+        </p>
+
+        <div class="encriptador_form_input_button_caixa">
+          <button
+            class="encriptador_form_input_button criptografar"
+            type="submit"
+          >
+            Criptografar
+          </button>
+          <button
+            class="encriptador_form_input_button descriptografar"
+            type="submit"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </form>
+
+      <aside>
+        <div id="aside_resultado_texto">
+          <div class="esconder aside_imagem_paragrafo">
+            <img src="assets/menina_lupa.svg" alt="menina segurando uma lupa"/>
+            <p class="aside_mensagem_resultado">Nenhuma mensagem encontrada</p>
+          </div>
+          <button class="copiar_button" type="button">Copiar</button>
+          <div id="cardMensagem" class="hidden">
+            <p>Texto copiado para a área de transferência!</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <a target="_blank" href="https://github.com/JoaoPeluzio"
+          >João Peluzio</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
